@@ -15,9 +15,8 @@ const Forecast = ({ data }) => {
       if (time === "18:00:00") grouped[date].evening = item;
     });
 
-    return Object.entries(grouped).slice(0, 3); // Only return the first 3 days
+    return Object.entries(grouped).slice(0, 3); 
   };
-
   const dailyForecast = getDailyForecast();
 
   return (
